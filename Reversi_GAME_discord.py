@@ -12,7 +12,7 @@ import zlib
 import discord
 import copy
 import sys
-
+import os
 
 
 
@@ -325,7 +325,7 @@ async def on_message(message):
 
         
         
-client.run('トークン')
+client.run(os.environ['token'])
 
 
 
