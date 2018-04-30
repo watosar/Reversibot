@@ -1,1 +1,1 @@
-bot: python Riversi_GAME_discord.py
+bot: python Reversi_GAME_discord.py
