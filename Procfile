@@ -1,1 +1,1 @@
-bot: python COCdiceBOT.py
+bot: python Riversi_GAME_discord.py
