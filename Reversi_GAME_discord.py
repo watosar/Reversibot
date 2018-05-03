@@ -230,10 +230,10 @@ def aimove(msg):
     return error
 
 async def game_save(msg):
-    await client.create_channel("386171440266870784",msg.channel.id)
+   
     pass
 
-def game_load(msg):
+async def game_load(msg):
     
     pass
 
