@@ -329,4 +329,6 @@ if os.environ.get('self') == None:
 else:
     token = os.environ['self'].split(',')
     
+print(token)
 client.run(*token)
+
