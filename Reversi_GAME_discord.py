@@ -325,10 +325,12 @@ async def on_message(message):
 
         
 if os.environ.get('self') == None:
-    token = [os.environ['token']]
+    token = os.environ['token']
+    client.run(token)
 else:
     token = os.environ['self'].split(',')
+    client.run(token[0],token[1])
     
 print(token)
-client.run(*token)
+
 
