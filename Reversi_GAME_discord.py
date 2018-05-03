@@ -330,7 +330,7 @@ if os.environ.get('self') == None:
 else:
     token = os.environ['self'].split(',')
     print(token[0],token[1])
-    client.run(token[0],token[1])
+    client.run(token[0],token[1],bot=False)
     
 
 
