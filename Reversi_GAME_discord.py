@@ -324,9 +324,9 @@ async def on_message(message):
                 await client.send_message(msg.channel, "ゲームが進行"+i)
 
         
-        
-client.run(os.environ['token'])
-
-
-
-#------------ゴミ置き場--------------------#
+if os.environ.get('self') == None:
+    token = [os.environ['token']]
+else:
+    token = os.environ['self'].split(',')
+    
+client.run(*token)
