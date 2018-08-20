@@ -104,16 +104,16 @@ class Reversi:
             for px in pxlist:
                 for i in range(-1, 2):
                     for j in range(-1 ,2):
-                        if  not(i == 0 and j == 0):
-                            if 0 <= py+i and py+i <= 7 and 0 <= px+j and px+j <= 7:
+                        if  not(i == j == 0):
+                            if 0 <= py+i <= 7 and 0 <= px+j <= 7:
                                 if self.board[py+i][px+j]==0:
-                                    if 0 <= py-i and py-i <= 7 and 0 <= px-j and px-j <= 7:
+                                    if 0 <= py-i <= 7 and 0 <= px-j <= 7:
                                         if self.board[py-i][px-j]==f:
                                             self.afpl[f].append([px+j,py+i,j,i])
                                         elif self.board[py-i][px-j]==-f:
                                             li=i
                                             lj=j
-                                            while 0 <= py-li and py-li <= 7 and 0 <= px-lj and px-lj <= 7:
+                                            while 0 <= py-li <= 7 and 0 <= px-lj <= 7:
                                                 check= self.board[py-li][px-lj]
                                                 if check == 0:
                                                     break
