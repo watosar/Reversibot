@@ -1,5 +1,5 @@
 import copy
-
+#ai(偽) 出来るようになったら更新したいですねー(´・ω・)
 
 def rvAI(game):
     choselist=[]
