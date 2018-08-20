@@ -98,7 +98,7 @@ class Reversi:
     def board_check(self):
         f=self.f
         self.afpl[f]=[]
-        
+        #ここのネストの深さはどうにかしたい
         for py in range(0, 8):
             pxlist = [i for i, n in enumerate(self.board[py]) if n == -f]
             for px in pxlist:
